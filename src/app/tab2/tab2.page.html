@@ -1,29 +1,193 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Photo Gallery
+      <ion-title class="ion-text-center">
+      Music Library
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-button href="#">home</ion-button>
+
+<!-- Colors -->
+<ion-button color="success">playlists</ion-button>
+
+
 
 <ion-content>
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Photo Gallery</ion-title>
+      <ion-title size="large">Spoti</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <ion-grid>
-    <ion-row>
-    <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
-      <ion-img [src]="photo.webviewPath" (click)="showActionSheet(photo, position)"></ion-img>
-    </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button (click)="photoService.addNewToGallery()">
-      <ion-icon name="camera"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+  <ion-searchbar showCancelButton="never"></ion-searchbar>
+  <ion-list>
+    <ion-item color="primary">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>beside you</ion-label>
+      <div class="item">
+      <ion-label>keshi</ion-label>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>war with heaven</ion-label>
+      <div class="item">
+      <ion-label>keshi</ion-label>
+    </div>
+    </ion-item>
+    <ion-item color="primary">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>right here</ion-label>
+      <div class="item">
+      <ion-label>keshi</ion-label>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>alright</ion-label>
+      <div class="item">
+      <ion-label>keshi</ion-label>
+    </div>
+    </ion-item>
+    <ion-item color="secondary">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>out of the blue</ion-label>
+      <div class="item">
+      <ion-label>rini</ion-label>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>oceane</ion-label>
+      <div class="item">
+      <ion-label>rini</ion-label>
+    </div>
+    </ion-item>
+    <ion-item color="secondary">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>camped</ion-label>
+      <div class="item">
+      <ion-label>rini</ion-label>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>bedtime story</ion-label>
+      <div class="item">
+      <ion-label>rini</ion-label>
+    </div>
+    </ion-item>
+    <ion-item color="danger">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>slowly dancing in the dark</ion-label>
+      <div class="item">
+      <ion-label>joji</ion-label>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>yeah right</ion-label>
+      <div class="item">
+      <ion-label>joji</ion-label>
+    </div>
+    </ion-item>
+    <ion-item color="danger">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>your man</ion-label>
+      <div class="item">
+      <ion-label>joji</ion-label>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>sanctuary</ion-label>
+      <div class="item">
+      <ion-label>joji</ion-label>
+    </div>
+    </ion-item>
+    <ion-item color="warning">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>still into you</ion-label>
+      <div class="item">
+      <ion-label>paramore</ion-label>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>that's what you get</ion-label>
+      <div class="item">
+      <ion-label>paramore</ion-label>
+    </div>
+    </ion-item>
+    <ion-item color="warning">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>ain't it fun</ion-label>
+      <div class="item">
+      <ion-label>paramore</ion-label>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>the only exception</ion-label>
+      <div class="item">
+      <ion-label>paramore</ion-label>
+    </div>
+    </ion-item>
+    <ion-item color="success">
+    <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>japanese denim</ion-label>
+      <div class="item">
+      <ion-label>daniel caesar</ion-label>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>who hurt you?</ion-label>
+      <div class="item">
+      <ion-label>daniel caesar</ion-label>
+    </div>
+    </ion-item>
+    <ion-item color="success">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>get you</ion-label>
+      <div class="item">
+      <ion-label>daniel caesar</ion-label>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>best part</ion-label>
+      <div class="item">
+      <ion-label>daniel caesar</ion-label>
+    </div>
+    </ion-item>
+    <ion-item color="tertiary">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>drivers license</ion-label>
+      <div class="item">
+      <ion-label>olivia rodrigo</ion-label>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>traitor</ion-label>
+      <div class="item">
+      <ion-label>olivia rodrigo</ion-label>
+    </div>
+    </ion-item>
+    <ion-item color="tertiary">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>deja vu</ion-label>
+      <div class="item">
+      <ion-label>olivia rodrigo</ion-label>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <ion-label>good 4 u</ion-label>
+      <div class="item">
+      <ion-label>olivia rodrigo</ion-label>
+    </div>
+    </ion-item>
+  </ion-list>
 </ion-content>
